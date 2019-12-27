@@ -1,0 +1,24 @@
+<!-- include bootstrap css -->
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+
+<table class="table table-striped" style="width:100%">
+
+<thead>
+<tr>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+</tr>
+</thead>
+<tbody>
+<% people.forEach((person) => { %>
+
+<tr>
+    <td><%= person.name %></td>
+    <td><%= person.username %></td>
+    <td><%= person.email %></td>
+</tr>
+
+<% }) %>
+</tbody>
+</table>
